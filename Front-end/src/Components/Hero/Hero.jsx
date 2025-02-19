@@ -6,7 +6,7 @@ import FeaturedVenues from '../Featured/FeaturedVenues'
 const Hero = () => {
   return (
     <div className="relative pt-32 pb-20 px-4 overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-emerald-400/20 -z-10" />
+    <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-emerald-400/20  -z-1000" />
     <div className="max-w-7xl mx-auto">
       <div className="relative">
         <div className="text-center max-w-3xl mx-auto space-y-6">

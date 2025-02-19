@@ -18,7 +18,7 @@ const App = () => {
       {
         path: '/',
         element: <div >
-        <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+        <Navbar/>
         <Hero/>
         <Footer />
       </div>
@@ -26,7 +26,7 @@ const App = () => {
       {
         path: '/venues',
         element: <div>
-          <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+          <Navbar/>
           <FeaturedVenues />
         </div>
       },
@@ -36,14 +36,14 @@ const App = () => {
           {
             path : '',
             element:<div>
-              <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+              <Navbar/>
               <Breadcrumb/>
             </div>
           },
           {
             path : ':id',
             element:<div>
-              <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+              <Navbar/>
               <BoxInfo/>
             </div>
           }

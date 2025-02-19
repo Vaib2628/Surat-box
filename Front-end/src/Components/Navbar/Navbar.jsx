@@ -3,7 +3,7 @@ import { MapPin, X, Menu, AlignLeft } from 'lucide-react'
 import MobileNav from './MobileNav'
 const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
   return (
-    <nav className="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-emerald-100">
+    <nav className="w-full z-50 bg-white/70 backdrop-blur-lg border-b border-emerald-100">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">

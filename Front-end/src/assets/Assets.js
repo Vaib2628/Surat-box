@@ -12,7 +12,9 @@ const featuredVenues = [
       ],
       reviews: 128,
       location: "Downtown Sports Complex",
-      amenities: ['Floodlights', 'Practice Nets', 'Pavilion']
+      amenities: ['Ball', 'Bat', 'Stumps', 'Lights', 'Sitting area', 'Parking'],
+      area : "Adajan",
+      address: "The Radiant International School, Ugat Gam, Jahangirabad, Adajan Surat-395005"
     },
     {
       id: 2,
@@ -27,7 +29,9 @@ const featuredVenues = [
       ],
       reviews: 156,
       location: "Central Stadium",
-      amenities: ['Floodlights', 'Practice Nets', 'Pavilion']
+      amenities: ['Ball', 'Bat', 'Stumps', 'Lights', 'Sitting area', 'Parking'],
+      area : "Adajan",
+      address: "The Radiant International School, Ugat Gam, Jahangirabad, Adajan Surat-395005"
     },
     {
       id: 3,
@@ -42,13 +46,24 @@ const featuredVenues = [
       ],
       reviews: 92,
       location: "Sports City",
-      amenities: ['Floodlights', 'Practice Nets', 'Pavilion']
+      amenities: ['Ball', 'Bat', 'Stumps', 'Lights', 'Sitting area', 'Parking'],
+      area : "Adajan",
+      address: "The Radiant International School, Ugat Gam, Jahangirabad, Adajan Surat-395005"
     }
   ];
 
 
 export const locationList = [
   "Udhana", "Nilgiri" , "Dindoli", "Adajan" ,"Jahangirpura" ,"Vesu" , "Pal" ,"Katargam"
+]
+
+export const png = [
+  { title :'Ball', image: "https://suratboxcricket.com/assets/images/aminitiesNew/ball.png" },
+  { title :'Bat', image: "https://suratboxcricket.com/assets/images/aminitiesNew/ball.png" },
+  { title :'Stumps', image: "https://suratboxcricket.com/assets/images/aminitiesNew/stumps.png" },
+  { title :'Lights', image: "https://suratboxcricket.com/assets/images/aminitiesNew/lights.png" },
+  { title :'Parking', image: "https://suratboxcricket.com/assets/images/aminitiesNew/parking.png" },
+  { title :'Sitting Area', image: "https://suratboxcricket.com/assets/images/aminitiesNew/sitting_area.png" },
 ]
 
 export default featuredVenues;

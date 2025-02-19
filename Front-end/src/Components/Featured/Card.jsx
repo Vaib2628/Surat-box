@@ -1,6 +1,7 @@
 import React from 'react'
 import VenueGallery from './VenueGallery'
 import { MapPin, Star } from 'lucide-react'
+import { Link } from 'react-router-dom'
 const Card = ({venue}) => {
   return (
     <div key={venue.id} className="overflow-hidden hover:shadow-xl transition-shadow bg-white border-cyan-400 rounded-lg relative">
@@ -8,6 +9,7 @@ const Card = ({venue}) => {
               <div className="absolute top-4 right-4 bg-emerald-900/90 backdrop-blur px-3 py-1 rounded-full">
                 <span className="text-emerald-300 ">{venue.price}/hr</span>
               </div>
+              <Link to={`/venues/box/${venue.id}`}>
               <div className="p-4">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">{venue.name}</h3>
                 <div className="flex items-center text-slate-900 mb-2">
@@ -32,6 +34,7 @@ const Card = ({venue}) => {
                   </button>
                 </div>
               </div>
+              </Link>
             </div>
   )
 }

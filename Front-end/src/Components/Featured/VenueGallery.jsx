@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import {ChevronLeft,ChevronRight} from 'lucide-react'
-const VenueGallery = ({ images, venueName }) => {
+import { useLocation } from "react-router-dom";
+const VenueGallery = ({ images, venueName, height}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -14,14 +15,14 @@ const VenueGallery = ({ images, venueName }) => {
 
   return (
     <div className="relative group">
-      <div className="relative w-full h-48 overflow-hidden">
+      <div className={`relative w-full ${height ? "sm:h-100 md:h-130" : "h-48"} overflow-hidden`}>
         <div className="flex transition-transform duration-300 ease-in-out" 
              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, idx) => (
             <img
               key={idx}
               src={image}
-              className="w-full h-48 object-cover flex-shrink-0"
+              className={`w-full  object-cover ${height ? "sm:h-100 md:h-130" : "h-48"} flex-shrink-0`}
             />
           ))}
         </div>

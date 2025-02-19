@@ -4,7 +4,7 @@ import React from 'react'
 const MobileNav = () => {
   return (
     <div className='h-screen w-[100vw] bg-white fixed top-0 left-0 '>
-      <div className='flex h-full w-full justify-between w-full'>
+      <div className='flex h-full justify-between w-full'>
         <div className='flex flex-col gap-3 pl-4 pt-10 w-[60%]'>
             <div className='flex flex-col gap-3 items-start'>
                 <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">

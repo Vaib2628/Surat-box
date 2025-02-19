@@ -1,29 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { MapPin, X, Menu, AlignLeft } from 'lucide-react'
+import MobileNav from './MobileNav'
+const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
+  return (
+    <nav className="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-emerald-100">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between h-20">
+          <div className="flex items-center">
+            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">
+              Cricketify
+            </span>
+          </div>
 
-const Navbar = () => {
-    return (
-            <div className="flex w-full body-font items-center absolute z-[100] ">
-                <div className="w-full xs:w-[85%] mx-auto flex p-5 flex-col sm:flex-row items-center justify-between ">
-                    <div>
-                            <span className="title-font font-medium sm:ml-3 text-xl text-gray-white">Cricketify</span>
-                    </div>
-                    
-                    <div className='flex text-white items-center h-full'>
-                        <div className="md:ml-auto flex items-center justify-center max-xs:text-[14px]">
-                            <a className="mr-5 hover:text-gray-900 hover:cursor-pointer ">About Us</a>
-                            <a className="mr-5 hover:text-gray-900 hover:cursor-pointer ">Contact Us</a>
-                        
-                            <button className="flex items-center bg-gray-100 border-0 py-1 px-2 sm:px-3 focus:outline-none text-gray-600 hover:bg-gray-200 rounded">Book Now
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </button>
-                            </div>
-                    </div>
-                    
-                </div>
-            </div>
-    )
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">About</a>
+            <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">Venues</a>
+            <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">Contact</a>
+            <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5">
+              Book Now
+            </button>
+          </div>
+
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
+            {isMenuOpen ? 
+  
+            <MobileNav />
+
+
+              : <Menu />}
+          </button>
+        </div>
+      </div>
+    </nav>
+  )
 }
 
 export default Navbar

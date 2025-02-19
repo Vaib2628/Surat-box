@@ -1,36 +1,29 @@
 import React from 'react'
 import { Search, MapPin, Calendar, Clock, Star, ArrowRight, Instagram, Facebook, Twitter, ChevronLeft, ChevronRight } from 'lucide-react'
+import { locationList } from '../../assets/Assets'
+import Asynchronous from './Search'
+import { Autocomplete, TextField } from '@mui/material'
+
 const Card = () => {
   return (
-      <div className="p-2 w-full md:w-1/2 mx-auto bg-slate-900/90 backdrop-blur rounded-lg shadow-lg border-cyan-400/20">
-            <div className="flex flex-wrap w-full mx-auto md:flex-nowrap gap-2 flex-col">
-                <div className="flex items-center w-full p-2 border-r border-slate-700">
-                  <MapPin className="w-5 h-5 text-cyan-400 mr-2" />
-                  <input 
-                    type="text" 
-                    placeholder="Location" 
-                    className="w-full outline-none bg-transparent text-white placeholder-slate-400"
-                  />
-                </div>
-                {/* <div className="flex items-center w-full p-2 border-r border-slate-700">
-                  <Calendar className="w-5 h-5 text-cyan-400 mr-2" />
-                  <input 
-                    type="date" 
-                    className="w-full outline-none bg-transparent text-white"
-                  />
-                </div>
-                <div className="flex items-center w-full p-2 border-r border-slate-700">
-                  <Clock className="w-5 h-5 text-cyan-400 mr-2" />
-                  <input 
-                    type="time" 
-                    className="w-full outline-none bg-transparent text-white"
-                  />
-                </div> */}
-                <button className="w-full px-6 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors">
-                  Search
-                </button>
-            </div>
+    <div className="mt-12 max-w-2xl mx-auto">
+    <div className="bg-white/80 backdrop-blur-lg p-4 rounded-2xl shadow-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="relative">
+          <Autocomplete
+            disablePortal
+            options={locationList}
+            renderInput={(params) => <TextField {...params} label="Location" />}
+          />
+          
         </div>
+        
+        <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:cursor-pointer">
+          Search Grounds
+        </button>
+      </div>
+    </div>
+  </div>
   )
 }
 

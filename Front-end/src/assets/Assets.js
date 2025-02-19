@@ -11,7 +11,8 @@ const featuredVenues = [
         "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
       ],
       reviews: 128,
-      location: "Downtown Sports Complex"
+      location: "Downtown Sports Complex",
+      amenities: ['Floodlights', 'Practice Nets', 'Pavilion']
     },
     {
       id: 2,
@@ -25,7 +26,8 @@ const featuredVenues = [
         "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
       ],
       reviews: 156,
-      location: "Central Stadium"
+      location: "Central Stadium",
+      amenities: ['Floodlights', 'Practice Nets', 'Pavilion']
     },
     {
       id: 3,
@@ -39,8 +41,14 @@ const featuredVenues = [
         "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
       ],
       reviews: 92,
-      location: "Sports City"
+      location: "Sports City",
+      amenities: ['Floodlights', 'Practice Nets', 'Pavilion']
     }
   ];
+
+
+export const locationList = [
+  "Udhana", "Nilgiri" , "Dindoli", "Adajan" ,"Jahangirpura" ,"Vesu" , "Pal" ,"Katargam"
+]
 
 export default featuredVenues;

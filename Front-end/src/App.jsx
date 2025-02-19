@@ -5,12 +5,12 @@ import Navbar from './Components/Navbar/Navbar'
 import FeaturedVenues from './Components/Featured/FeaturedVenues'
 import Footer from './Components/Footer/Footer'
 const App = () => {
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
+
     <div >
-      <Navbar/>
+      <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
       <Hero/>
-      <FeaturedVenues/>
       <Footer />
     </div>
   )

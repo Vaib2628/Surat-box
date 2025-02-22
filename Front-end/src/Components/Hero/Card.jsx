@@ -6,14 +6,15 @@ import { Autocomplete, TextField } from '@mui/material'
 
 const Card = () => {
   return (
-    <div className="mt-12 max-w-2xl mx-auto">
+    <div className="mt-12 max-w-2xl mx-auto z-30">
     <div className="bg-white/80 backdrop-blur-lg p-4 rounded-2xl shadow-xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="relative">
+        <div className="relative ">
           <Autocomplete
-            disablePortal
+            disablePortal={false}
             options={locationList}
-            renderInput={(params) => <TextField {...params} label="Location" />}
+            renderInput={(params) => <TextField {...params} label="Location" 
+            />}
           />
           
         </div>

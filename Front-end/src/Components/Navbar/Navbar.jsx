@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import MobileNav from "./MobileNav";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,21 +11,21 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">
-              Cricketify
+              <Link to={'/'}>Cricketify</Link>
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="max-md:hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
+            <span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
               About
-            </a>
-            <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
+            </span>
+            <Link to={'/venues'}><span className="text-gray-600 hover:text-emerald-600 transition-colors">
               Venues
-            </a>
-            <a href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
+            </span></Link>
+            <span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
               Contact
-            </a>
+            </span>
             <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5">
               Book Now
             </button>

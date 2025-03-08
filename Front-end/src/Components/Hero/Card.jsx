@@ -1,10 +1,11 @@
-import React from 'react'
-import { Search, MapPin, Calendar, Clock, Star, ArrowRight, Instagram, Facebook, Twitter, ChevronLeft, ChevronRight } from 'lucide-react'
+import React, {useState} from 'react'
+import { Search, MapPin, Calendar, Clock, Star, ArrowRight, Instagram, Facebook, Twitter, ChevronLeft, ChevronRight} from 'lucide-react'
 import { locationList } from '../../assets/Assets'
 import Asynchronous from './Search'
 import { Autocomplete, TextField } from '@mui/material'
-
+import { Link } from 'react-router-dom'
 const Card = () => {
+  const [location, setLocation] = useState('');
   return (
     <div className="mt-12 max-w-2xl mx-auto z-30">
     <div className="bg-white/80 backdrop-blur-lg p-4 rounded-2xl shadow-xl">
@@ -13,15 +14,16 @@ const Card = () => {
           <Autocomplete
             disablePortal={false}
             options={locationList}
-            renderInput={(params) => <TextField {...params} label="Location" 
-            />}
+            value={location}
+            renderInput={(params) => <TextField {...params} label="Location"/>}
+            onChange={(e, value) => setLocation(value)}
           />
           
         </div>
         
-        <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:cursor-pointer">
+        <Link to={`/venues/${location}`}><button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:cursor-pointer w-full">
           Search Grounds
-        </button>
+        </button></Link>
       </div>
     </div>
   </div>

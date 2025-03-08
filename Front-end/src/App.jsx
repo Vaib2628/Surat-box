@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer'
 import BoxInfo from './Components/BoxInfo/BoxInfo'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Breadcrumb from './Components/Navbar/Breadcrumb'
+import AllVenues from './Components/Venues/AllVenues'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
 
@@ -24,10 +25,10 @@ const App = () => {
       </div>
       },
       {
-        path: '/venues',
+        path: '/venues/:location?',
         element: <div>
           <Navbar/>
-          <FeaturedVenues />
+          <AllVenues />
         </div>
       },
       {

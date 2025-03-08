@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+import { Link, X } from "lucide-react";
 import React, { useEffect } from "react";
 
 const MobileNav = ({ setIsMenuOpen }) => {
@@ -15,7 +15,7 @@ const MobileNav = ({ setIsMenuOpen }) => {
       {/* Top Section with Logo & Close Button */}
       <div className="flex justify-between items-center p-6">
         <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">
-          Cricketify
+          <Link to={'/'}>Cricketify</Link>
         </span>
 
         {/* Close Button */}

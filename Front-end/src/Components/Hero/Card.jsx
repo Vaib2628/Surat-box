@@ -15,7 +15,7 @@ const Card = () => {
             disablePortal={false}
             options={locationList}
             value={location}
-            renderInput={(params) => <TextField {...params} label="Location"/>}
+            renderInput={(params) => <TextField {...params} required={true} label="Location"/>}
             onChange={(e, value) => setLocation(value)}
           />
           

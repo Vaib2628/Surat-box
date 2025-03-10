@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import MobileNav from "./MobileNav";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+import AuthPopup from "../Logins/AuthPopup";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  return (
+  const [isOpen, setisOpen] = useState(false)
+  const [onClose, setonClose] = useState(false)
+  return (<>
+    {isOpen && (<AuthPopup isOpen={isOpen} setisOpen={setisOpen}/>)}
     <nav className="w-full z-50 bg-white/70 backdrop-blur-lg border-b border-emerald-100">
       <div className={`max-w-7xl mx-auto px-4 ${isMenuOpen && "hidden"}`}>
         <div className="flex items-center justify-between h-20">
@@ -26,6 +29,12 @@ const Navbar = () => {
             <span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
               Contact
             </span>
+            
+            <button className="text-gray-600 hover:text-emerald-600 transition-colors"
+            onClick={()=>setisOpen(true)}
+            >
+              Login
+            </button>
             <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5">
               Book Now
             </button>
@@ -39,8 +48,8 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && <MobileNav setIsMenuOpen={setIsMenuOpen} />}
-    </nav>
+      {isMenuOpen && <MobileNav setIsMenuOpen={setIsMenuOpen} setisOpen={setisOpen}/>}
+    </nav></>
   );
 };
 

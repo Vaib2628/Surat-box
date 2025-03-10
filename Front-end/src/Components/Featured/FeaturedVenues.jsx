@@ -3,15 +3,16 @@ import featuredVenues from '../../assets/Assets'
 import { ArrowRight} from 'lucide-react';
 import VenueGallery from './VenueGallery';
 import Card from './Card';
+import { Link } from 'react-router-dom';
 const FeaturedVenues = () => {
   return (
     <div>
       <div className="w-full xs:w-[85%] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="flex max-sm:flex-col justify-center items-center mb-8 relative">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Venues</h2>
-          <button className="flex items-center text-emerald-400 hover:text-emerald-300 sm:absolute sm:right-0 sm:top-3">
+          <Link to={'/venues'}><button className="flex items-center text-emerald-400 hover:text-emerald-300 sm:absolute sm:right-0 sm:top-3">
             View all <ArrowRight className="w-4 h-4 ml-2" />
-          </button>
+          </button></Link>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

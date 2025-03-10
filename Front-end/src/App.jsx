@@ -8,10 +8,13 @@ import BoxInfo from './Components/BoxInfo/BoxInfo'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Breadcrumb from './Components/Navbar/Breadcrumb'
 import AllVenues from './Components/Venues/AllVenues'
+import AdminDashboard from './Components/Bookings/AdminDashboard'
+import TurfBooking from './Components/Bookings/TurfBooking'
+import AdminLogin from './Components/Bookings/AdminLogin'
+import AuthPopup from './Components/Logins/AuthPopup'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
-
-
+  
 
 
   const router = createBrowserRouter(
@@ -19,7 +22,7 @@ const App = () => {
       {
         path: '/',
         element: <div >
-        <Navbar/>
+        <Navbar  />
         <Hero/>
         <Footer />
       </div>
@@ -27,7 +30,7 @@ const App = () => {
       {
         path: '/venues/:location?',
         element: <div>
-          <Navbar/>
+          <Navbar  />
           <AllVenues />
         </div>
       },
@@ -37,14 +40,14 @@ const App = () => {
           {
             path : '',
             element:<div>
-              <Navbar/>
+              <Navbar  />
               <Breadcrumb/>
             </div>
           },
           {
             path : ':id',
             element:<div>
-              <Navbar/>
+              <Navbar  />
               <BoxInfo/>
             </div>
           }

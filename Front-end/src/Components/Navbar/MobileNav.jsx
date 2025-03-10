@@ -1,7 +1,7 @@
-import { Link, X } from "lucide-react";
+import { X } from "lucide-react";
 import React, { useEffect } from "react";
-
-const MobileNav = ({ setIsMenuOpen }) => {
+import { Link } from "react-router-dom";
+const MobileNav = ({ setIsMenuOpen, setisOpen }) => {
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -10,7 +10,8 @@ const MobileNav = ({ setIsMenuOpen }) => {
     };
   }, []);
 
-  return (
+  return (<>
+    {/* {isOpen && (<AuthPopup isOpen={isOpen} setisOpen={setisOpen}/>)} */}
     <div className="relative h-screen w-[100vw] bg-white z-[99999] flex flex-col shadow-lg">
       {/* Top Section with Logo & Close Button */}
       <div className="flex justify-between items-center p-6">
@@ -26,15 +27,15 @@ const MobileNav = ({ setIsMenuOpen }) => {
 
       {/* Navigation Links */}
       <div className="flex flex-col gap-6 px-6 text-lg mt-4">
-        <a href="#" className="text-gray-700">Venue</a>
+      <Link to={'/venues'}><span className="text-gray-700" onClick={() => setIsMenuOpen(false)}>Venue</span></Link>
         <a href="#" className="text-gray-700">About Us</a>
         <a href="#" className="text-gray-700">Contact Us</a>
-
+        <button onClick={()=>{setisOpen(true)}}>Login</button>
         <button className="px-6 py-3 bg-emerald-800 text-white rounded-lg w-full">
           Book Now
         </button>
       </div>
-    </div>
+    </div></>
   );
 };
 

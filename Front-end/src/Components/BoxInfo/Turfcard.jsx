@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Eye } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TurfCard = ({ venue }) => {
   return (
@@ -14,8 +15,9 @@ const TurfCard = ({ venue }) => {
             <Eye className="w-4 h-4 mr-2" />
             <span>{venue.views} Views</span>
             </div>
+            <Link to={'https://bookyourbox.in/5098-2/'}>
             <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold
-            py-2 px-4 rounded w-fit mt-1">Book Now</button>
+            py-2 px-4 rounded w-fit mt-1">Book Now</button></Link>
         </div>
       
       <div className="mt-4 flex flex-col  text-red-600 font-bold max-sm:text-sm text-lg">

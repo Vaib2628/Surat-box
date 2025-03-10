@@ -13,7 +13,7 @@ import TurfBooking from './Components/Bookings/TurfBooking'
 import AdminLogin from './Components/Bookings/AdminLogin'
 import AuthPopup from './Components/Logins/AuthPopup'
 import AboutPage from './Components/About/AboutPage'
-import ChildOutlet from './Components/childOutlet'
+import ChildOutlet from './Components/ChildOutlet'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
   

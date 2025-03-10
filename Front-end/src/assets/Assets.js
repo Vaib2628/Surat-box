@@ -3,7 +3,7 @@ const featuredVenues = [
       id: 1,
       name: "Premium Cricket Arena",
       rating: 4.8,
-      price: "$45",
+      price: "1000",
       images: [
         "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
         "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
@@ -20,7 +20,7 @@ const featuredVenues = [
       id: 2,
       name: "Urban Cricket Hub",
       rating: 4.9,
-      price: "$50",
+      price: "900",
       images: [
         "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
         "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
@@ -37,7 +37,7 @@ const featuredVenues = [
       id: 3,
       name: "Elite Cricket Center",
       rating: 4.7,
-      price: "$40",
+      price: "1000",
       images: [
         "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
         "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
@@ -56,7 +56,7 @@ export const VenuesList = [
     id: 1,
     name: "Premium Cricket Arena",
     rating: 4.8,
-    price: "$45",
+    price: "1000",
     images: [
       "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
       "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
@@ -73,7 +73,7 @@ export const VenuesList = [
     id: 2,
     name: "Urban Cricket Hub",
     rating: 4.9,
-    price: "$50",
+    price: "900",
     images: [
       "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
       "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
@@ -90,7 +90,7 @@ export const VenuesList = [
     id: 3,
     name: "Elite Cricket Center",
     rating: 4.7,
-    price: "$40",
+    price: "1000",
     images: [
       "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
       "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",

@@ -20,15 +20,15 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="max-md:hidden md:flex items-center space-x-8">
-            <span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
+            <Link to={'/about'}><span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
               About
-            </span>
+            </span></Link>
             <Link to={'/venues'}><span className="text-gray-600 hover:text-emerald-600 transition-colors">
               Venues
             </span></Link>
-            <span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
+            <Link to={'/contact'}><span href="#" className="text-gray-600 hover:text-emerald-600 transition-colors">
               Contact
-            </span>
+            </span></Link>
             
             <button className="text-gray-600 hover:text-emerald-600 transition-colors"
             onClick={()=>setisOpen(true)}

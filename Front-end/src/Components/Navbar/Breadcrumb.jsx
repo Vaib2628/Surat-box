@@ -3,7 +3,8 @@ import { useLocation , Link } from 'react-router-dom'
 const Breadcrumb = () => {
     const location = useLocation();
     const pathnames = location.pathname.split('/').filter((x)=>x);
-
+    const filteredPathnames = pathnames.filter((x)=>x==='venues')
+    console.log(filteredPathnames)
   return (
     <div className=''>
       <nav>
@@ -11,7 +12,7 @@ const Breadcrumb = () => {
             <li>
                 <Link to='/'>Home</Link>
             </li>
-            {pathnames.map((item, idx)=>{
+            {filteredPathnames.map((item, idx)=>{
                 const path = `/${pathnames.slice(0, idx+1).join('/')}`
                 return(
                     <li key={idx} className='flex ml-2 items-center'>

@@ -37,9 +37,7 @@ const ContactPage = () => {
             </div>
           </div>
           
-          <button className="mt-10 bg-green-800 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
-            Contact Us
-          </button>
+          
         </div>
       </div>
     </div>

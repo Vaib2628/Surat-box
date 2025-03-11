@@ -14,6 +14,7 @@ import AdminLogin from './Components/Bookings/AdminLogin'
 import AuthPopup from './Components/Logins/AuthPopup'
 import AboutPage from './Components/About/AboutPage'
 import ChildOutlet from './Components/ChildOutlet'
+import ContactPage from './Components/Contact/ContactPage'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
   
@@ -31,10 +32,19 @@ const App = () => {
         {
           path : 'about',
           element : <AboutPage/>
+        },{
+          path : 'contact',
+          element : <ContactPage/>
         },
         {
           path : '/venues/:location?',
           element : <AllVenues/>
+        },{
+          path : 'venues/box/',
+          element : <Breadcrumb />
+        },{
+          path : 'venues/box/:id',
+          element : <BoxInfo/>
         }
       ]
     },
@@ -60,25 +70,25 @@ const App = () => {
       //     <AllVenues />
       //   </div>
       // },
-      {
-        path:'/venues/box/',
-        children : [
-          {
-            path : '',
-            element:<div>
-              <Navbar  />
-              <Breadcrumb/>
-            </div>
-          },
-          {
-            path : ':id',
-            element:<div>
-              <Navbar  />
-              <BoxInfo/>
-            </div>
-          }
-        ]
-      }
+      // {
+      //   path:'/venues/box/',
+      //   children : [
+      //     {
+      //       path : '',
+      //       element:<div>
+      //         <Navbar  />
+      //         <Breadcrumb/>
+      //       </div>
+      //     },
+      //     {
+      //       path : ':id',
+      //       element:<div>
+      //         <Navbar  />
+      //         <BoxInfo/>
+      //       </div>
+      //     }
+      //   ]
+      // }
 
     ]
   )

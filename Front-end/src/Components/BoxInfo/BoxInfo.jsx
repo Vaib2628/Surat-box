@@ -25,7 +25,6 @@ const BoxInfo = () => {
 
             </div>
         </div>
-        <Footer />
     </div>
   )
 }

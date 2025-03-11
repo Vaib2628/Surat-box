@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { VenuesList } from '../../assets/Assets'
 import { ArrowRight } from 'lucide-react';
 import Card from '../Featured/Card';
+import LocationFilter from './LocationFilter';
+import { locationList } from '../../assets/Assets';
 const AllVenues = () => {
   const {location} = useParams();
 
@@ -13,7 +15,7 @@ const AllVenues = () => {
   return (
     <div>
       <div className="w-full xs:w-[85%] mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        
+        <LocationFilter locations={locationList}/>
 
         {filteredVenues.length > 0 ? (<>
           <div className="flex max-sm:flex-col justify-center items-center mb-8 relative">

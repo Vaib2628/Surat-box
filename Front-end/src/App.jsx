@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Analytics } from "@vercel/analytics/react"
 import VenueGallery from './Components/Featured/VenueGallery'
 import Hero from './Components/Hero/Hero'
 import Navbar from './Components/Navbar/Navbar'
@@ -94,7 +95,7 @@ const App = () => {
   )
   return (
     <RouterProvider router={router}>
-
+      <Analytics />
     </RouterProvider>
     
   )

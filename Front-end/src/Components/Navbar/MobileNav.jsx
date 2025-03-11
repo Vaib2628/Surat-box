@@ -16,7 +16,7 @@ const MobileNav = ({ setIsMenuOpen, setisOpen }) => {
       {/* Top Section with Logo & Close Button */}
       <div className="flex justify-between items-center p-6">
         <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">
-          <Link to={'/'}>Cricketify</Link>
+          <Link to={'/'}>BookYourBox</Link>
         </span>
 
         {/* Close Button */}
@@ -29,7 +29,7 @@ const MobileNav = ({ setIsMenuOpen, setisOpen }) => {
       <div className="flex flex-col gap-6 px-6 text-lg mt-4">
       <Link to={'/venues'}><span className="text-gray-700" onClick={() => setIsMenuOpen(false)}>Venue</span></Link>
         <Link to={'/about'} onClick={()=>{setIsMenuOpen(false)}}><span className="text-gray-700">About Us</span></Link>
-        <Link to={'/contact'} onClick={()=>{setIsMenuOpen(false)}}><span href="#" className="text-gray-700">Contact Us</span></Link>
+        <Link to={'/contact'} onClick={()=>{setIsMenuOpen(false)}}><span  className="text-gray-700">Contact Us</span></Link>
 
 
         <button onClick={()=>{setisOpen(true)}}>Login</button>

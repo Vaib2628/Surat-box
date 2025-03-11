@@ -3,9 +3,11 @@ import { Search, MapPin, Calendar, Clock, Star, ArrowRight, Instagram, Facebook,
 import { locationList } from '../../assets/Assets'
 import Asynchronous from './Search'
 import { Autocomplete, TextField } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const Card = () => {
   const [location, setLocation] = useState('');
+
+  const navigate = useNavigate();
   return (
     <div className="mt-12 max-w-2xl mx-auto z-30">
     <div className="bg-white/80 backdrop-blur-lg p-4 rounded-2xl shadow-xl">
@@ -21,9 +23,15 @@ const Card = () => {
           
         </div>
         
-        <Link to={`/venues/${location}`}><button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:cursor-pointer w-full">
+        <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:cursor-pointer w-full"
+        onClick={()=>{
+          if (location) {
+            navigate(`/venues/${location}`)
+          }
+        }}
+        >
           Search Grounds
-        </button></Link>
+        </button>
       </div>
     </div>
   </div>

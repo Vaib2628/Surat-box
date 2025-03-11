@@ -1,13 +1,35 @@
-import React, {createContext, useContext} from 'react'
+import React, {useState, createContext, useEffect} from 'react'
 
-const StoreContext = () => {
-    const StoreContext = createContext()
-    const [token, setToken] = useState("")
-  return (
-    <div>
-      
-    </div>
-  )
+export const StoreContext = createContext();
+
+export const StoreProvider = ({children})=>{
+    const [token, setToken] = useState('');
+    const [isOpen, setisOpen] = useState(false)
+    useEffect(()=>{
+      setToken(localStorage.getItem('token') || null);
+    }, [])
+    const proxy = "http://localhost:5000";
+    const login = (token) => {
+        setToken(token);
+        localStorage.setItem('token', token);
+    }
+
+    const logout = () => {
+      setToken(null);
+      localStorage.removeItem('token');
+    }
+    const StoreValue = {
+      token,
+      setToken,
+      login, 
+      logout,
+      proxy,
+      isOpen,
+      setisOpen
+    }
+    return (
+      <StoreContext.Provider value={StoreValue}>
+        {children}
+      </StoreContext.Provider>
+    )
 }
-
-export default StoreContext

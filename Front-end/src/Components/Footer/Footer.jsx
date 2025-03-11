@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-center justify-items-center text-center">
             <div>
               <h3 className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent mb-4">
-                Cricketify
+                BookYourBox
               </h3>
               <p className="text-gray-600">
                 Book premium cricket grounds instantly.

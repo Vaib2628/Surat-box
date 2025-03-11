@@ -61,7 +61,7 @@ const AboutPage = () => {
             </div>
             
             <div className="md:w-2/3">
-              <h2 className="text-2xl font-bold text-green-800 mb-4">Cricketify</h2>
+              <h2 className="text-2xl font-bold text-green-800 mb-4">BookYourBox</h2>
               <p className="text-gray-700 mb-4">
                 CricketSpot provides a simple and efficient way to book cricket turfs for matches and practice sessions. 
                 Founded in 2023, we connect players with quality cricket facilities across the country.

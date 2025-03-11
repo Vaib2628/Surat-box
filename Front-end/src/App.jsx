@@ -93,11 +93,10 @@ const App = () => {
 
     ]
   )
-  return (
+  return (<>
       <Analytics />
-    <RouterProvider router={router}>
-    </RouterProvider>
-    
+     <RouterProvider router={router} />
+    </>
   )
 }
 

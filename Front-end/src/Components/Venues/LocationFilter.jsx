@@ -34,11 +34,11 @@ const LocationFilter = ({ locations }) => {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <div className="font-medium text-gray-700">Filter by Location</div>
         
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4 justify-center">
           <select 
             value={selectedLocation} 
             onChange={handleLocationChange}
-            className="w-48 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="w-48 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 place-self-center"
           >
             <option value="">All Locations</option>
             {locations.map((loc) => (

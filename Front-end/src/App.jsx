@@ -94,8 +94,8 @@ const App = () => {
     ]
   )
   return (
-    <RouterProvider router={router}>
       <Analytics />
+    <RouterProvider router={router}>
     </RouterProvider>
     
   )

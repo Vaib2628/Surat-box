@@ -28,8 +28,10 @@ const MobileNav = ({ setIsMenuOpen, setisOpen }) => {
       {/* Navigation Links */}
       <div className="flex flex-col gap-6 px-6 text-lg mt-4">
       <Link to={'/venues'}><span className="text-gray-700" onClick={() => setIsMenuOpen(false)}>Venue</span></Link>
-        <Link to={'/about'} onClick={() => setIsMenuOpen(false)}><span className="text-gray-700">About Us</span></Link>
-        <Link to={'/contact'} onClick={() => setIsMenuOpen(false)}><span className="text-gray-700">Contact Us</span></Link>
+        <Link to={'/about'} onClick={()=>{setIsMenuOpen(false)}}><span className="text-gray-700">About Us</span></Link>
+        <Link to={'/contact'} onClick={()=>{setIsMenuOpen(false)}}><span href="#" className="text-gray-700">Contact Us</span></Link>
+
+
         <button onClick={()=>{setisOpen(true)}}>Login</button>
         <button className="px-6 py-3 bg-emerald-800 text-white rounded-lg w-full">
           Book Now

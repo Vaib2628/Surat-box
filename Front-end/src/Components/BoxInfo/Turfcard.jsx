@@ -27,10 +27,7 @@ const TurfCard = ({ venue }) => {
             <MapPin className="w-4 h-4 mr-2" />
             <span className="text-sm sm:text-[text-]">{venue.location}</span>
             </div>
-            <div className="flex items-center text-gray-600 mt-1">
-            <Eye className="w-4 h-4 mr-2" />
-            <span>{venue.views} Views</span>
-            </div>
+            
 
             
             <button onClick={()=>{bookingHandler()}} className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold
@@ -38,8 +35,8 @@ const TurfCard = ({ venue }) => {
         </div>
       
       <div className="mt-4 flex flex-col  text-red-600 font-bold max-sm:text-sm text-lg">
-        <div className="mr-4">Morning: ₹ {venue.price}/hr</div>
-        <div>Night: ₹ {venue.price}/hr</div>
+        <div className="mr-4">Morning: ₹ {venue.morningPrice}/hr</div>
+        <div>Night: ₹ {venue.nightPrice}/hr</div>
       </div>
         <div>
             

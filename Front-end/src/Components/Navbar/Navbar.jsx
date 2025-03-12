@@ -44,25 +44,11 @@ const Navbar = () => {
               Contact
             </span></Link>
             
-            {/* {!login ? <button className="text-gray-600 hover:text-emerald-600 transition-colors"
-            onClick={()=>setisOpen(true)}
-            >
-              Login
-            </button> : <div className={selectedProf ? 'relative top-6' :'relative w-10'}>
-              <div onClick={()=>setSelectedProf((prev)=>!prev)}  className="cursor-pointer"><CircleUserRound /></div>
-              {selectedProf && <div>
-                <div></div>
-                <div onClick={()=>logout()} className="cursor-pointer bg-white shadow-lg rounded-lg p-2 gap-1.5 flex ">
-                  <LogOut />logout
-                </div>
-              
-              </div>}
-
-              </div>} */}
+            
               <ProfileButton setisOpen={setisOpen}/>
-            <button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5">
+            <Link to={'/venues'}><button className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5">
               Book Now
-            </button>
+            </button></Link>
           </div>
 
           {/* Mobile Menu Toggle */}

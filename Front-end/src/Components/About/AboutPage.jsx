@@ -11,33 +11,33 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
             <img 
-              src="/api/placeholder/200/200" 
+              src="https://placehold.co/200x200" 
               alt="Team member" 
               className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-green-800">Rahul Sharma</h3>
+            <h3 className="text-xl font-semibold text-green-800">Harsh Patel</h3>
             <p className="text-gray-600">Founder & CEO</p>
             <p className="text-gray-500 mt-2">Former state-level cricket player with a passion for tech</p>
           </div>
           
           <div className="text-center">
             <img 
-              src="/api/placeholder/200/200" 
+              src="https://placehold.co/200x200" 
               alt="Team member" 
               className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-green-800">Priya Patel</h3>
+            <h3 className="text-xl font-semibold text-green-800">Utsav Patel</h3>
             <p className="text-gray-600">Operations Director</p>
-            <p className="text-gray-500 mt-2">Sports management expert with 10+ years experience</p>
+            <p className="text-gray-500 mt-2">Sports management expert with 1+ years experience</p>
           </div>
           
           <div className="text-center">
             <img 
-              src="/api/placeholder/200/200" 
+              src="https://placehold.co/200x200" 
               alt="Team member" 
               className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-green-800">Arun Kumar</h3>
+            <h3 className="text-xl font-semibold text-green-800">Vaibhav Patil</h3>
             <p className="text-gray-600">Technology Lead</p>
             <p className="text-gray-500 mt-2">Full-stack developer and cricket enthusiast</p>
           </div>

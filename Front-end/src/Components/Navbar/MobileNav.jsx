@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ProfileButton from "./ProfileButton";
 const MobileNav = ({ setIsMenuOpen, setisOpen }) => {
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
@@ -32,10 +33,13 @@ const MobileNav = ({ setIsMenuOpen, setisOpen }) => {
         <Link to={'/contact'} onClick={()=>{setIsMenuOpen(false)}}><span  className="text-gray-700">Contact Us</span></Link>
 
 
-        <button onClick={()=>{setisOpen(true)}}>Login</button>
-        <button className="px-6 py-3 bg-emerald-800 text-white rounded-lg w-full">
-          Book Now
-        </button>
+        {/* <button onClick={()=>{setisOpen(true)}}>Login</button> */}
+        <ProfileButton setisOpen={setisOpen}/>
+        <Link to={'/venues'}>
+          <button onClick={()=>setIsMenuOpen(false)} className="px-6 py-3 bg-emerald-800 text-white rounded-lg w-full">
+            Book Now
+          </button>
+        </Link>
       </div>
     </div></>
   );

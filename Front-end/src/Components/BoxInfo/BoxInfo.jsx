@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import Breadcrumb from '../Navbar/Breadcrumb';
 import VenueGallery from '../Featured/VenueGallery';
-import featuredVenues from '../../assets/Assets';
+import { VenuesList } from '../../assets/Assets';
 import TurfCard from './Turfcard';
 import TurfAmen from './TurfAmen';
 import TurfLoc from './TurfLoc';
@@ -10,7 +10,7 @@ import Footer from './../Footer/Footer'
 const BoxInfo = () => {
     const { id } = useParams(); 
     
-    const venue = featuredVenues.find((venue) => venue.id === parseInt(id));
+    const venue = VenuesList.find((venue) => venue.id === parseInt(id));
   return (
     <div className=''>
         <Breadcrumb />

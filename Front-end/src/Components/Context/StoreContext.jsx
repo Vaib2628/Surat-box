@@ -8,7 +8,7 @@ export const StoreProvider = ({children})=>{
     useEffect(()=>{
       setToken(localStorage.getItem('token') || null);
     }, [])
-    const proxy = "http://localhost:5000";
+    const proxy = "https://surat-box.onrender.com";
     const login = (token) => {
         setToken(token);
         localStorage.setItem('token', token);

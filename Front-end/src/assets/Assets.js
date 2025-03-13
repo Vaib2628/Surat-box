@@ -7,10 +7,11 @@ export const VenuesList = [
     morningPrice: "800",
     nightPrice: "1000",
     images: [
-      "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
-      "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
-      "https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/dsc5239-1024x684-1024x516-1708090338044-compressed.webp",
-      "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
+      
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/qj14ijqt9vltbqzzevxp",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/yjo5egbp4oh9avxkc5eb",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/lpwtv5o3crxfzo3tl9ct",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/mithed35boxlywwkeinl"
     ],
     // reviews: 128,
     location: "Downtown Sports Complex",
@@ -26,10 +27,11 @@ export const VenuesList = [
     morningPrice: "800",
     nightPrice: "1000",
     images: [
-      "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
-      "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
-      "https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/dsc5239-1024x684-1024x516-1708090338044-compressed.webp",
-      "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
+      
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/qj14ijqt9vltbqzzevxp",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/yjo5egbp4oh9avxkc5eb",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/lpwtv5o3crxfzo3tl9ct",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/mithed35boxlywwkeinl"
     ],
     // reviews: 156,
     location: "Central Stadium",
@@ -45,10 +47,11 @@ export const VenuesList = [
     morningPrice: "800",
     nightPrice: "1000",
     images: [
-      "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
-      "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
-      "https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/dsc5239-1024x684-1024x516-1708090338044-compressed.webp",
-      "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
+      
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/qj14ijqt9vltbqzzevxp",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/yjo5egbp4oh9avxkc5eb",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/lpwtv5o3crxfzo3tl9ct",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/mithed35boxlywwkeinl"
     ],
     // reviews: 92,
     location: "Sports City",
@@ -64,10 +67,11 @@ export const VenuesList = [
     morningPrice: "800",
     nightPrice: "1000",
     images: [
-      "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
-      "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
-      "https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/dsc5239-1024x684-1024x516-1708090338044-compressed.webp",
-      "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
+      
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/qj14ijqt9vltbqzzevxp",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/yjo5egbp4oh9avxkc5eb",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/lpwtv5o3crxfzo3tl9ct",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/mithed35boxlywwkeinl"
     ],
     // reviews: 128,
     location: "Downtown Sports Complex",
@@ -83,10 +87,11 @@ export const VenuesList = [
     morningPrice: "800",
     nightPrice: "1000",
     images: [
-      "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
-      "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
-      "https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/dsc5239-1024x684-1024x516-1708090338044-compressed.webp",
-      "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
+      
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/qj14ijqt9vltbqzzevxp",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/yjo5egbp4oh9avxkc5eb",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/lpwtv5o3crxfzo3tl9ct",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/mithed35boxlywwkeinl"
     ],
     // reviews: 156,
     location: "Central Stadium",
@@ -102,10 +107,11 @@ export const VenuesList = [
     morningPrice: "800",
     nightPrice: "1000",
     images: [
-      "https://suratboxcricket.com/post/14/box-cricket-what-does-it-mean-955914.jpg",
-      "https://blog.cricheroes.com/wp-content/uploads/2023/12/World-of-Box-Cricket.jpg",
-      "https://superblog.supercdn.cloud/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/dsc5239-1024x684-1024x516-1708090338044-compressed.webp",
-      "https://i.ytimg.com/vi/5Ygl2rD3bYk/maxresdefault.jpg"
+      
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/qj14ijqt9vltbqzzevxp",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/yjo5egbp4oh9avxkc5eb",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/lpwtv5o3crxfzo3tl9ct",
+      "https://res.cloudinary.com/dmuxv9cqc/image/upload/f_auto,q_auto/v1/Surat-box/mithed35boxlywwkeinl"
     ],
     // reviews: 92,
     location: "Sports City",

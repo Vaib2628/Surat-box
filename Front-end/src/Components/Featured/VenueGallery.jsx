@@ -22,6 +22,8 @@ const VenueGallery = ({ images, venueName, height}) => {
             <img
               key={idx}
               src={image}
+              loading="lazy"  
+              alt="Loading image.."
               className={`w-full  object-cover ${height ? "sm:h-100 md:h-130" : "h-48"} flex-shrink-0`}
             />
           ))}

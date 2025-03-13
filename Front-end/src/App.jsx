@@ -16,6 +16,8 @@ import AuthPopup from './Components/Logins/AuthPopup'
 import AboutPage from './Components/About/AboutPage'
 import ChildOutlet from './Components/ChildOutlet'
 import ContactPage from './Components/Contact/ContactPage'
+
+import { Helmet } from 'react-helmet-async'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
   
@@ -100,8 +102,12 @@ const App = () => {
     ]
   )
   return (<>
+  <Helmet >
+    <meta name="google-site-verification" content="7YKs64rkVo3vHK87Pct_P8ez4sJ1q3Jsy0W1Il_DT2I" />
+  </Helmet>
       <Analytics />
      <RouterProvider router={router} />
+
     </>
   )
 }

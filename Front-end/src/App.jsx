@@ -102,8 +102,7 @@ const App = () => {
     ]
   )
   return (<>
-  <Helmet >
-    <meta name="google-site-verification" content="7YKs64rkVo3vHK87Pct_P8ez4sJ1q3Jsy0W1Il_DT2I" />
+  <Helmet ><meta name="google-site-verification" content="7YKs64rkVo3vHK87Pct_P8ez4sJ1q3Jsy0W1Il_DT2I" />
   </Helmet>
       <Analytics />
      <RouterProvider router={router} />

@@ -4,7 +4,6 @@ import { ArrowRight} from 'lucide-react';
 import VenueGallery from './VenueGallery';
 import Card from './Card';
 import { Link } from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const FeaturedVenues = () => {
   const [featuredVenues, setFeaturedVenues] = useState([]);
@@ -21,13 +20,11 @@ const FeaturedVenues = () => {
             View all <ArrowRight className="w-4 h-4 ml-2" />
           </button></Link>
         </div>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={0.4}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredVenues.map(venue => (
             <Card venue={venue} key={venue.id}/>
           ))}
         </div>
-        </ScrollAnimation>
       </div> 
     </div>
   )

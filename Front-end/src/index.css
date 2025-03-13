@@ -2,4 +2,3 @@
 @theme {
     --breakpoint-xs: 30rem;
 }
-@import "animate.css/animate.compat.css"

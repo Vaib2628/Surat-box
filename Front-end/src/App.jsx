@@ -17,7 +17,7 @@ import AboutPage from './Components/About/AboutPage'
 import ChildOutlet from './Components/ChildOutlet'
 import ContactPage from './Components/Contact/ContactPage'
 
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
   

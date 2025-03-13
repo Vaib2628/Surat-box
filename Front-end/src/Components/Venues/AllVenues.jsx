@@ -24,9 +24,9 @@ const AllVenues = () => {
       <Helmet>
       <title>Cricket Grounds in Surat | Book Cricket Box Online | BookYourBox</title>
       <title>Cricket Turf Booking Surat | Same-Day Cricket Box Reservations</title>
-      <meta name="description" content="Discover 20+ cricket grounds across Surat. Filter by location, facilities, and price. Book your preferred cricket box instantly with no booking fees."></meta>
+      <meta name="description" content="Discover 20+ cricket grounds across Surat. Filter by location, facilities, and price. Book your preferred cricket box instantly with no booking fees." />
 
-      <meta name="description" content="Find and book the best cricket turfs in Surat. Real-time availability, secure payment, and instant confirmations. Perfect for matches and practice sessions."></meta>
+      <meta name="description" content="Find and book the best cricket turfs in Surat. Real-time availability, secure payment, and instant confirmations. Perfect for matches and practice sessions." />
       </Helmet>
       <div className="w-full xs:w-[85%] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <LocationFilter locations={locationList}/>

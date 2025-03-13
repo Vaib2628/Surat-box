@@ -7,8 +7,7 @@ import TurfPageSchema from '../SchemaMarkup/TurfPageSchema'
 const Card = ({venue}) => {
   return (<>
   <Helmet>
-    <meta title='description'>
-    </meta>
+    <meta title='description'/>
   </Helmet>
       <TurfPageSchema turfData={venue}/>
   

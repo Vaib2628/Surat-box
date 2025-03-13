@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet'
 
 const ContactPage = () => {
   return (<>
-  <Helmet>
-    <title>Contact us for any query related to the cricket box in surat</title>
-    <meta name='description'>
-      Visit us for the best reliable cricket box and turf bookings in surat 
-    </meta>
-  </Helmet>
+
+    <Helmet>
+      <title>Contact Us | Best Cricket Box in Surat</title>
+      <meta name="description" content="Visit us for the best reliable cricket box and turf bookings in Surat." />
+    </Helmet>
+
     <div>
       <div className="bg-green-100 py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
@@ -16,7 +16,7 @@ const ContactPage = () => {
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
             Have questions about our services or want to partner with us? We'd love to hear from you!
           </p>
-          
+
           <div className="flex flex-col md:flex-row justify-center gap-6 max-w-3xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow text-center flex-1">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-800 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,7 +25,7 @@ const ContactPage = () => {
               <h3 className="text-lg font-semibold text-green-800 mb-1">Phone</h3>
               <p className="text-gray-600">+91 9316726049</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow text-center flex-1">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-800 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -33,7 +33,7 @@ const ContactPage = () => {
               <h3 className="text-lg font-semibold text-green-800 mb-1">Email</h3>
               <p className="text-gray-600">bookyourbox2025@gmail.com</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow text-center flex-1">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-800 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -43,12 +43,12 @@ const ContactPage = () => {
               <p className="text-gray-600">L-102 Anjani residency jahangirpura, surat</p>
             </div>
           </div>
-          
-          
+
+
         </div>
       </div>
     </div>
-    </>
+  </>
   )
 }
 

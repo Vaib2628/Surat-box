@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 const AboutPage = () => {
   return (<>
     <Helmet>
-    <meta name="description" content="Explore Surat's top-rated cricket grounds with our comprehensive guide. Compare facilities, pricing, and availability before booking your next match."></meta>
+    <meta name="description" content="Explore Surat's top-rated cricket grounds with our comprehensive guide. Compare facilities, pricing, and availability before booking your next match."/>
     </Helmet>
   
     <div className="min-h-screen bg-green-50">

@@ -106,7 +106,8 @@ const App = () => {
   <Helmet >
     <meta name="google-site-verification" content="7YKs64rkVo3vHK87Pct_P8ez4sJ1q3Jsy0W1Il_DT2I" />
     <title>BookYourBox | Cricket Turf Booking in Surat | Online Reservation</title>
-    <meta name="description" content="Book cricket turfs in Surat instantly with BookYourBox. Compare prices, check availability, and secure your cricket box online. Best rates guaranteed!"></meta>
+    <meta name="description" content="Book cricket turfs in Surat instantly with BookYourBox. Compare prices, check availability, and secure your cricket box online. Best rates guaranteed!" />
+
   </Helmet>
   <HomePageSchema/>
       <Analytics />

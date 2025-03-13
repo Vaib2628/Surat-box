@@ -21,7 +21,9 @@ const AdminDashboard = () => {
         method,
         url: `${API_BASE_URL}${endpoint}`,
         data: body,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json',
+          Authorization : 'Bearer ' + localStorage.getItem('token')
+         },
       });
       return response.data;
     } catch (error) {

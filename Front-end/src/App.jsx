@@ -48,7 +48,13 @@ const App = () => {
           element : <BoxInfo/>
         }
       ]
-    },
+    },{
+      path : '/admin',
+      element : <AdminDashboard />
+    }, {
+      path : '/bookings/:turfId',
+      element : <TurfBooking />
+    }
       // {
       //   path: '/',
       //   element: <div >

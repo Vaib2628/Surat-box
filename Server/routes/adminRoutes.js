@@ -13,8 +13,8 @@ const { admin } = require('../middleware/admin');
 const router = express.Router();
 
 // All routes require admin privileges
-// router.use(protect);
-// router.use(admin);
+router.use(protect);
+router.use(admin);
 
 router.get('/profile', getAdminProfile);
 router.get('/users', getUsers);

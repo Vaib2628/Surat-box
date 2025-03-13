@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.post('/register', registerUser);
 router.post('/login', loginUser);
-router.post('/admin/register', protect, admin, registerAdmin);
-// router.post('/admin/register', registerAdmin);
+// router.post('/admin/register', protect, admin, registerAdmin);
+router.post('/admin/register', registerAdmin);
 
 module.exports = router;

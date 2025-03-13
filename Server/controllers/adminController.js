@@ -40,7 +40,7 @@ exports.getAdminProfile = async (req, res) => {
 // @access  Private/Admin
 exports.getUsers = async (req, res) => {
   try {
-    const users = await User.find({}).select('-password');
+    const users = await user.find({});
     
     res.json({
       success: true,

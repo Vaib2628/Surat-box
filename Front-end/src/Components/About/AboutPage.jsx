@@ -1,8 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const AboutPage = () => {
-  return (
+  return (<>
+    <Helmet>
+    <meta name="description" content="Explore Surat's top-rated cricket grounds with our comprehensive guide. Compare facilities, pricing, and availability before booking your next match."></meta>
+    </Helmet>
+  
     <div className="min-h-screen bg-green-50">
+      
       
       {/* Our Team Section */}
       <div className="container mx-auto px-4 py-12 md:py-16">
@@ -106,6 +112,7 @@ const AboutPage = () => {
         </div>
 
         </div>
+        </>
   );
 };
 

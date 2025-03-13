@@ -1,7 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const ContactPage = () => {
-  return (
+  return (<>
+  <Helmet>
+    <title>Contact us for any query related to the cricket box in surat</title>
+    <meta name='description'>
+      Visit us for the best reliable cricket box and turf bookings in surat 
+    </meta>
+  </Helmet>
     <div>
       <div className="bg-green-100 py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
@@ -41,6 +48,7 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

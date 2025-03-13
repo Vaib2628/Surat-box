@@ -2,9 +2,18 @@ import React from 'react'
 import VenueGallery from './VenueGallery'
 import { MapPin, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+import TurfPageSchema from '../SchemaMarkup/TurfPageSchema'
 const Card = ({venue}) => {
-  return (
+  return (<>
+  <Helmet>
+    <meta title='description'>
+    </meta>
+  </Helmet>
+      <TurfPageSchema turfData={venue}/>
+  
     <div key={venue.id} className="overflow-hidden hover:shadow-xl transition-shadow bg-white border-cyan-400 rounded-lg relative">
+
               <VenueGallery images={venue.images} venueName={venue.name} />
               <div className="absolute top-4 right-4 bg-emerald-900/90 backdrop-blur px-3 py-1 rounded-full">
                 <span className="text-emerald-300 ">{venue.morningPrice}/hr</span>
@@ -35,7 +44,7 @@ const Card = ({venue}) => {
                 </div>
               </div>
               </Link>
-            </div>
+            </div></>
   )
 }
 

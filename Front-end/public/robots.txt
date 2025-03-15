@@ -3,4 +3,4 @@ User -agent: *
 Disallow:
 Allow : /
 # Specify the location of the sitemap
-Sitemap: https://bookyourbox.vercel.app/sitemap_2.xml
+Sitemap: https://bookyourbox.vercel.app/.well-known/sitemap_2.xml

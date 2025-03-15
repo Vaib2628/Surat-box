@@ -1,6 +1,6 @@
 # Allow all crawlers access to everything
 User -agent: *
 Disallow:
-
+Allow : /
 # Specify the location of the sitemap
 Sitemap: https://bookyourbox.vercel.app/sitemap_2.xml

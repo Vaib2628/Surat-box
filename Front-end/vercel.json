@@ -1,6 +1,10 @@
 {
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/sitemap-main.xml", "dest": "/sitemap-main.xml" },
+    { "src": "/.well-known/sitemap.xml", "dest": "/.well-known/sitemap.xml" }
   ]
 }

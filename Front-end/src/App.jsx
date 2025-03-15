@@ -19,10 +19,14 @@ import ContactPage from './Components/Contact/ContactPage'
 
 import { Helmet } from 'react-helmet'
 import HomePageSchema from './Components/SchemaMarkup/HomePageSchema'
+import ReactGA from 'react-ga4';
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false) 
   
-
+  useEffect(() => {
+    // Send pageview on route change
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
 
   const router = createBrowserRouter(
     [ {

@@ -105,8 +105,9 @@ const App = () => {
   return (<>
   <Helmet >
     <meta name="google-site-verification" content="7YKs64rkVo3vHK87Pct_P8ez4sJ1q3Jsy0W1Il_DT2I" />
-    <title>BookYourBox | Cricket Turf Booking in Surat | Online Reservation</title>
-    <meta name="description" content="Book cricket turfs in Surat instantly with BookYourBox. Compare prices, check availability, and secure your cricket box online. Best rates guaranteed!" />
+    <title>Box Cricket in Surat | Book Your Turf Online - BookYourBox</title>
+    <meta name="description" content="Looking for the best box cricket turf in Surat? Book your slot online easily with BookYourBox. Enjoy hassle-free booking and competitive pricing!" />
+
 
   </Helmet>
   <HomePageSchema/>

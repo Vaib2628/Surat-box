@@ -110,7 +110,7 @@ const App = () => {
 
 
   </Helmet>
-  <HomePageSchema/>
+    <HomePageSchema/>
       <Analytics />
      <RouterProvider router={router} />
 

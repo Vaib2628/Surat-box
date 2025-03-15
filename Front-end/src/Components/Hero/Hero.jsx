@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Card from './Card'
-import HeaderImg from '../../assets/Images/header.jpg'
 import { MapPin, Calendar } from 'lucide-react'
 import FeaturedVenues from '../Featured/FeaturedVenues'
 const Hero = () => {

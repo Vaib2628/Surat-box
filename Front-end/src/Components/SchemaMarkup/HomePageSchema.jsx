@@ -6,7 +6,7 @@ const HomePageSchema = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "SportsActivityLocation",
-    "name": "BookYourBox",
+    "name": "Box cricket ground in surat",
     "description": "Book cricket turfs in Surat online. Compare prices, check availability, and secure your cricket box instantly.",
     "url": "https://bookyourbox.vercel.app",
     "logo": "https://bookyourbox.vercel.app/logo.png",

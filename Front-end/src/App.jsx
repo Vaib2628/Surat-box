@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Analytics } from "@vercel/analytics/react"
 import VenueGallery from './Components/Featured/VenueGallery'
 import Hero from './Components/Hero/Hero'

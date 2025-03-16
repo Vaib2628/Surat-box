@@ -4,7 +4,7 @@ import { MapPin, Calendar } from 'lucide-react'
 import FeaturedVenues from '../Featured/FeaturedVenues'
 const Hero = () => {
   return (
-    <div className="relative pt-32 pb-20 px-4 overflow-hidden">
+    <div className="relative pt-20 sm:pt-32 pb-20 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-emerald-400/20  -z-1000" />
       <div className="max-w-7xl mx-auto">
         <div className="relative">
@@ -22,7 +22,7 @@ const Hero = () => {
               </h1>
             </h1>
             <p
-              className="text-xl text-gray-600"
+              className="text-lg sm:text-lg text-gray-600"
               style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" }}
             >
               Premium grounds. Professional facilities. Unforgettable matches.

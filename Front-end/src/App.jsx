@@ -109,8 +109,40 @@ const App = () => {
   return (<>
   <Helmet >
     <meta name="google-site-verification" content="7YKs64rkVo3vHK87Pct_P8ez4sJ1q3Jsy0W1Il_DT2I" />
-    <title>Box Cricket in Surat | Book Your Turf Online - BookYourBox</title>
-    <meta name="description" content="Looking for the best box cricket turf in Surat? Book your slot online easily with BookYourBox. Enjoy hassle-free booking and competitive pricing!" />
+    <Helmet>
+        {/* Primary Meta Tags */}
+        <title>BookYourBox -Box Cricket Turf Booking in Surat | Online Reservation</title>
+        <meta name="title" content="BookYourBox - #1 Box Cricket Turf Booking in Surat | Online Reservation" />
+        <meta name="description" content="Book box cricket turfs in Surat instantly with BookYourBox. Best prices, prime locations, and hassle-free online booking system. Reserve your slot now!" />
+        
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://bookyourbox.vercel.app" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bookyourbox.vercel.app" />
+        <meta property="og:title" content="BookYourBox - #1 Box Cricket Turf Booking in Surat | Online Reservation" />
+        <meta property="og:description" content="Book box cricket turfs in Surat instantly with BookYourBox. Best prices, prime locations, and hassle-free online booking system. Reserve your slot now!" />
+        <meta property="og:image" content="https://bookyourbox.vercel.app/og-image.jpg" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://bookyourbox.vercel.app" />
+        <meta property="twitter:title" content="BookYourBox - #1 Box Cricket Turf Booking in Surat | Online Reservation" />
+        <meta property="twitter:description" content="Book box cricket turfs in Surat instantly with BookYourBox. Best prices, prime locations, and hassle-free online booking system. Reserve your slot now!" />
+        <meta property="twitter:image" content="https://bookyourbox.vercel.app/twitter-image.jpg" />
+        
+        {/* Additional SEO tags */}
+        <meta name="keywords" content="box cricket, cricket turf, Surat, book online, sports booking, cricket booking, indoor cricket" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="author" content="BookYourBox" />
+      </Helmet>
 
 
   </Helmet>

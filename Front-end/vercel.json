@@ -1,13 +1,24 @@
 {
+  "rewrites": [
+    {
+      "source": "/(.*)", 
+      "destination": "/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/public/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/public/robots.txt"
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml"
-        }
-      ]
+      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
     }
   ]
 }

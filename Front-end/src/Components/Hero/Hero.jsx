@@ -14,12 +14,12 @@ const Hero = () => {
               style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" }}
             >
               Find Your Perfect
-              <span
+              <h1
                 className="block bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent"
                 style={{ willChange: "opacity, transform" }}
               >
-                Cricket Experience
-              </span>
+                Cricket Experience In Surat
+              </h1>
             </h1>
             <p
               className="text-xl text-gray-600"
